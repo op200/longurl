@@ -23,4 +23,5 @@ export default defineConfig({
       allow: ['..']
     }
   },
+  base: process.env.NODE_ENV === 'production' ? '/longurl/' : '/', 
 })
