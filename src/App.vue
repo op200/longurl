@@ -38,7 +38,7 @@ const jump_url = computed(() => {
   if (!output_url.value)
     return '';
 
-  return `${current_url.protocol}//${current_url.hostname}:${current_url.port}/?url=${output_url.value}`;
+  return `${current_url.protocol}//${current_url.hostname}:${current_url.port}${current_url.pathname}/?url=${output_url.value}`;
 });
 
 
